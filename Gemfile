@@ -45,6 +45,9 @@ group :development do
   gem 'spring'
 end
 
+group :production do
+  gem 'mysql2'
+end
 
 group :development, :test do
   gem 'factory_girl_rails'
