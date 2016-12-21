@@ -76,4 +76,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Since production is in Elastic Beanstalk, the default auto-detection for
+  # the host & protocol don't work correctly.
+  config.action_controller.default_url_options = {host: "pdxactivist.org", protocol: 'https'}
 end
