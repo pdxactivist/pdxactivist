@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: production
+    environment: pdxactivist-prod
     group_suffix: null
 global:
   application_name: pdxactivist
