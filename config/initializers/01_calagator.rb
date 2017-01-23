@@ -50,10 +50,10 @@ Calagator.setup do |config|
 
   # The tile provider to use when rendering maps with Leaflet.
   # One of: leaflet, stamen, mapbox, google
-  config.mapping_provider = 'stamen'
+  config.mapping_provider = 'google'
 
   # The tiles to use for the map, see the docs for individual Leaflet plugins.
-  config.mapping_tiles = 'terrain'
+  config.mapping_tiles = 'ROADMAP'
 
   # Other mapping examples:
   #
