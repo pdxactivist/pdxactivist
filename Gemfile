@@ -54,4 +54,4 @@ group :development, :test do
   gem 'faker'
 end
 
-gem 'calagator'
+gem 'calagator', :git => 'https://github.com/calagator/calagator'
