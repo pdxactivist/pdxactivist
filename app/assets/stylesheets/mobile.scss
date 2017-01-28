@@ -55,23 +55,29 @@
 
   .subnav {
     line-height: inherit;
-	padding-left: 10px;
-    height: inherit; }
-    .subnav li {
-      padding: 0.25em 0; }
-    .subnav a {
-      margin: 0.5em 0;
-      padding: 0.15em 0.5em; }
-    .subnav .active {
-      -moz-border-radius: 4px;
-      border-radius: 4px;
-      color: white;
-      background: $header;
-	padding: 0.25em;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	right: 10px;
+    padding-left: 10px;
+    height: inherit; 
+  }
+  .subnav li {
+    padding: 0.25em 0;
+  }
+  .subnav a {
+    margin: 0.5em 0;
+    padding: 0.15em 0.5em;
+  }
+  .subnav .active {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: white;
+    background: $header;
+    padding: 0.25em;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    right: 10px;
     top: 10px;
+  }
+  .subnav .active:after {
+    display: none;
   }
 
 
