@@ -1,0 +1,286 @@
+@import "variables";
+@charset "UTF-8";
+
+
+@media (max-width: 960px) {
+  .expander_toggle,
+  .expander_toggle:link,
+  .expander_toggle:visited {
+    display: block;
+    margin: 1em 0;
+    color:  $text_highlight;
+    font-style: italic; }
+    a.expander_toggle {
+      padding: 0.25em;
+      padding-left: 0; }
+    a.expander_toggle::before {
+      content: "» "; }
+
+  #global_header {
+    background: none repeat scroll 0 0 $header;
+    height: 80px;
+    position: relative;
+  }
+
+  #top_footer {
+    padding-left: 10px;
+  }
+
+  #project_menu,
+  .sidebar {
+	display: none;
+  }
+
+  #content {
+	margin: 5px 0 0 10px;
+  }
+
+  #list_filters {
+	display: none;
+  }
+
+  .list_items {
+    width: inherit;
+    margin: inherit;
+  }
+
+  #global_header a {
+	font-size: 100%;
+  }
+
+  #global_header #project_title {
+    left: 10px;
+    top: 10px;
+  }
+
+  .subnav {
+    line-height: inherit;
+    padding-left: 10px;
+    height: inherit; 
+  }
+  .subnav li {
+    padding: 0.25em 0;
+  }
+  .subnav a {
+    margin: 0.5em 0;
+    padding: 0.15em 0.5em;
+  }
+  .subnav .active {
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: white;
+    background: $header;
+    padding: 0.25em;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    right: 10px;
+    top: 10px;
+  }
+  .subnav .active:after {
+    display: none;
+  }
+
+
+  #search_form {
+    right: 15px;
+  }
+
+  #search_form label {
+	display: none;
+  }
+
+  #search_field {
+	width: 121px;
+  }
+
+  .sidebar {
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  .sidebar.single_view_right {
+	position: inherit;
+	width: inherit;
+	margin-top: 0px;
+	width: 90%;
+  }
+
+  .standard_form input[type="text"],
+  .standard_form input[type="url"],
+  .standard_form input[type="number"],
+  .standard_form input[type="email"],
+  .standard_form input[type="tel"],
+  .standard_form textarea,
+  .standard_form .text textarea
+  {
+    width: 170px;
+  }
+
+  textarea {
+    width: 165px;
+    height: 6em;
+  }
+
+  .contentbar {
+    margin: 0;
+    padding: 0; }
+    .contentbar > .vevent h1,
+    .contentbar .location h1 {
+      margin-top: 0;
+      padding-top: 0; }
+
+  .copy_block,
+  .single_event .description,
+  .single_event .location.vcard,
+  .single_event .tags,
+  .single_venue .tags,
+  .single_venue #events,
+  .single_venue .description,
+  .single_venue .location.vcard
+  {
+    float: none;
+    width: inherit;
+    padding: inherit;
+    margin: 1em 0;
+  }
+
+  .flash {
+    float: none;
+    width: inherit;
+    margin: 0.5em;
+    margin-left: 0;
+    padding: 0.5em;
+  }
+
+  .single_venue > div > .description,
+  .single_venue > div > .location.vcard {
+    margin: 1em 0;
+    padding: 1em 0;
+    background: inherit;
+  }
+
+  .site_index {}
+    .site_index #homepage_sidebar,
+    .site_index #tagcloud {
+      display: none; }
+    .site_index #homepage_sidebar {
+      float: none;
+      margin: 1em; }
+      .site_index #homepage_sidebar #project_description {
+        width: inherit;
+        margin: 0; }
+    .site_index #whats_happening {
+      margin: 0 10px 0 0 ; }
+      .site_index #whats_happening > h1 {
+        display: none; }
+    .site_index .coming_events h3 {
+      background: $section_head_background;
+      color: inherit;
+      padding: 0.25em;
+      padding-right: 0;
+      text-align: left;
+      margin-right: -1em; }
+
+
+  .events_show #google_map,
+  .venues_show #google_map {
+    display: none;
+  }
+/************************
+ * New, Import, and Edit form styles
+ ************************/
+  #event_form,
+  #source_form,
+  #venue_form{
+    input, label, textarea{
+      display: block;
+      width: 90%;
+    }
+    input, textarea{
+      border: 1px solid darkgrey;
+      border-radius: 3px;
+    }
+    .actions{
+      padding-left:5%;
+    }
+    label{
+      margin-left:0;
+      text-align:left;
+    }
+    .inline-hints{
+      width: 90%;
+      margin: 0 2.5%;
+    }
+  }
+
+  #event_form{
+    #date_start, #time_start,
+    #date_end, #time_end{
+      display: inline;
+      margin-left:0;
+      margin-right:0;
+      width: 37%;
+      min-width: 70px;
+    }
+    .at{
+      position:relative;
+      top:4px;
+      font-weight:bold;
+      margin-right:2%;
+      margin-left: 2%;
+    }
+    .to{
+      display:block;
+      text-align:left;
+      font-weight:bold;
+      width: 90%;
+    }
+    #event_submit_action{
+      width:46.5%;
+      input{
+        height:30px;
+        max-width:112.633px;
+      }
+    }
+  }
+
+  #source_form{             /*Event Import Form*/
+    #source_submit_action{
+      width:46.5%;
+      input{
+        height:30px;
+        max-width:112.633px;
+      }
+      margin-left:25%;
+    }
+  }
+
+  #venue_form{
+    #venue_wifi_input{
+      width:100%;
+      label{
+        display:inline;
+        padding-left:0;
+      }
+      input{
+        display:inline;
+        width:20px;
+        position:relative;
+        top:3px;
+      }
+      #venue_submit_action{
+        margin-left:25%;
+        width:46.5%;
+        input{
+          height:30px;
+          max-width:112.633px;
+        }
+      }
+    }
+  }
+
+  .appropriateness_message{ margin-right: 10px; }
+  /* Venues index page */
+  .venues_index #content{ margin-right: 10px; }
+  .events_index #content{ margin-right: 10px; }
+}
