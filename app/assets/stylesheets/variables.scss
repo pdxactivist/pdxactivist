@@ -7,8 +7,10 @@ $wifi_blue: #6098e6;
 $dk_green: #445544;
 $lt_blue: #e8fbfe;
 
+$page_background: #EFEFEF;
+
 $contrast_color: #0086BF;
-$box_background: #eee;
+$box_background: $page_background;
 $closed: $red;
 $default_text: $black;
 $footer: $red;

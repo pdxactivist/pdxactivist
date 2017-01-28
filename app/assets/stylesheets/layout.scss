@@ -3,39 +3,128 @@
 /* @group Global Layout
 ----------------------------------------*/
 
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,600);
+
 body {
-  background: $header;
+  background: $red;
 }
 
 #outer {
-  background: $white;
+  background: $page_background;
 }
 
-#global_header {
-  background: $header;
+#site_header {
+  min-height: 250px;
+  text-align: center;
   position: relative;
-  height: 95px;
+
+  .content {
+    padding-top: 2rem;
+    position: relative;
+  }
+
+  .title, .subtitle {
+    color: $white;
+    font-family: "Dosis";
+    font-weight: 600;
+  }
+
+  .title {
+    color: $white;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .header-search {
+    margin-top: 1rem;
+
+    input {
+      min-width: 30%;
+      font-family: "Dosis";
+      font-weight: 600;
+      font-size: 1.5rem;
+      border: 2px solid #222;
+      background: $page_background;
+      padding: 0.25em;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -475px;
+  }
+
+  #flags {
+    rect {
+      opacity: 0;
+      animation: fadein 0.8s;
+      animation-fill-mode: forwards;
+    }
+
+    #flag-1 { animation-delay: 0.0s; }
+    #flag-2 { animation-delay: 0.1s; }
+    #flag-3 { animation-delay: 0.10s; }
+    #flag-4 { animation-delay: 0.20s; }
+    #flag-5 { animation-delay: 0.20s; }
+    #flag-4 { animation-delay: 0.30s; }
+    #flag-6 { animation-delay: 0.30s; }
+    #flag-7 { animation-delay: 0.40s; }
+    #flag-8 { animation-delay: 0.45s; }
+    #flag-9 { animation-delay: 0.50s; }
+    #flag-10 { animation-delay: 0.55s; }
+    #flag-11 { animation-delay: 0.60s; }
+    #flag-12 { animation-delay: 0.65s; }
+    #flag-13 { animation-delay: 0.70s; }
+    #flag-14 { animation-delay: 0.75s; }
+    #flag-15 { animation-delay: 0.80s; }
+    #flag-16 { animation-delay: 0.85s; }
+    #flag-17 { animation-delay: 0.90s; }
+    #flag-18 { animation-delay: 0.95s; }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+      to   {
+        opacity: 1;
+      }
+    }
+  }
 }
 
-#global_header a {
-  color: $header_links;
+footer {
+  background: $red;
+  padding: 2rem 1rem;
+  color: #222;
+
+  a {
+    color: $white !important;
+  }
+
+  .content {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
-#top_footer {
-  display: none;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Sanchez);
-
-#global_header #project_title {
-  font-family: Sanchez;
-  color: $header_text;
-  font-size: 29px;
-  line-height: 31px;
-  height: 31px;
-  left: 40px;
-  position: absolute;
-  top: 25px;
+a.add_event_button {
+  display: inline-block;
+  background: $red;
+  color: $white;
+  padding: 0.25em 0.5em;
+  font-size: 1.2rem;
+  font-family: "Dosis";
+  font-weight: 600;
 }
 
 #app_menu ul {
@@ -96,43 +185,11 @@ body {
   border: 1px solid gray;
 }
 
-.subnav {
-  font-size: 1.2em;
-  background: $subnav;
-  padding-left: 40px;
-  line-height: 2em;
-}
-
-.subnav ul {
-  list-style: none;
-  margin: 0;
-}
-
-.subnav li {
-  float: left;
-  margin-right: 1.5em;
-  overflow: hidden;
-  position: relative;
-}
-
-.subnav a {
-  color: $header_text;
-  padding-bottom: .42em;
-}
-
-.subnav .active:after {
-  content: "▲";
-  position: absolute;
-  bottom: -1em;
-  left: 0;
-  right: 0;
-  text-align: center;
-  color: $header_text;
-}
-
 #content {
   min-height: 100vh;
-  margin: 1em 30px 1em 40px;
+  max-width: 950px;
+  margin: 1em auto;
+  padding-bottom: 3rem;
   position: relative;
 }
 
@@ -191,7 +248,7 @@ ul.event_list .url {
 ul.event_list .list_date {
   text-align: right;
   padding-right: 1.5em;
-  border-right: 1px solid #e2fad2;
+  border-right: 1px solid darken($page_background, 10%);
   vertical-align: top;
   width: 7em;
 }
@@ -561,6 +618,14 @@ fieldset .no_label, fieldset .help {
 
 #whats_happening h1 {
   padding-top: .2em
+}
+
+#whats_happening .add_event_button {
+  float: right;
+}
+
+.coming_events h3 {
+  margin-top: 1em;
 }
 
 #project_description {
