@@ -22,11 +22,7 @@ body {
 }
 
 #top_footer {
-  background: $footer;
-  color: $default_text;
-  padding: .5em 30px .5em 40px;
-  font-size: 70%;
-  clear: both;
+  display: none;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Sanchez);
@@ -87,7 +83,7 @@ body {
   top: 15px;
 
   label {
-    display: none;
+    color: $header_text;
   }
 }
 
@@ -206,7 +202,7 @@ ul.event_list .list_date {
 
 .event_table .day_of_week,
 ul.event_list .day_of_week {
-  color: #59a12d;
+  color: $contrast_color;
   font-weight: bold;
 }
 
@@ -287,7 +283,7 @@ ul.event_list .list_date {
 }
 
 .single_event .date {
-  color: #82c555;
+  color: $contrast_color;
   font-size: 1.3em;
   font-weight: bold;
   margin-bottom: 1em;

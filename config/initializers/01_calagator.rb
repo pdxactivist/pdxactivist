@@ -39,7 +39,7 @@ Calagator.setup do |config|
   # Stamen's terrain tiles will be used by default.
   # Map marker color
   # Values: red, darkred, orange, green, darkgreen, blue, purple, darkpuple, cadetblue
-  config.mapping_marker_color = 'green'
+  config.mapping_marker_color = 'darkred'
 
   # A Google Maps API key is required to use Google's geocoding service
   # as well as to display maps using their API.
