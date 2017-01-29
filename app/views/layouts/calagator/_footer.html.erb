@@ -1,0 +1,32 @@
+<footer>
+  <div class="content">
+    <section>
+      <h3>About</h3>
+      <ul>
+        <li><%= link_to 'About PDX Activist', about_path %></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Browse</h3>
+      <ul>
+        <li><%= link_to 'Events', events_path %></li>
+        <li><%= link_to 'Venues', venues_path %></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Contribute</h3>
+      <ul>
+        <li><%= link_to 'Add an Event', new_event_path %></li>
+        <li><%= link_to 'Import an Event', new_source_path %></li>
+        <li><%= link_to 'Add a Venue', new_venue_path %></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Subscribe</h3>
+      <ul>
+        <li><%= link_to "iCalendar feed", icalendar_feed_link %></li>
+        <li><%= link_to "Atom feed", atom_feed_link %></li>
+      </ul>
+    </section>
+  </div>
+</footer>

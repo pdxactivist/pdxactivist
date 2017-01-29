@@ -1,0 +1,37 @@
+<header id="site_header">
+  <svg width="947px" height="252px" viewBox="0 0 947 252" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0.8">
+          <g id="Desktop" transform="translate(-25.000000, 0.000000)">
+              <g id="flags" transform="translate(25.000000, -94.000000)">
+                  <rect id="flag-18" fill="#B60000" transform="translate(110.000000, 142.000000) rotate(-9.000000) translate(-110.000000, -142.000000) " x="9" y="79" width="202" height="126"></rect>
+                  <rect id="flag-9" fill="#D70000" transform="translate(193.611894, 205.024246) rotate(-9.000000) translate(-193.611894, -205.024246) " x="92.6118937" y="142.024246" width="202" height="126"></rect>
+                  <rect id="flag-13" fill="#121212" transform="translate(161.000000, 142.000000) rotate(-9.000000) translate(-161.000000, -142.000000) " x="60" y="79" width="202" height="126"></rect>
+                  <rect id="flag-5" fill="#D70000" transform="translate(262.000000, 177.000000) rotate(-9.000000) translate(-262.000000, -177.000000) " x="161" y="114" width="202" height="126"></rect>
+                  <rect id="flag-6" fill="#4F4F4F" transform="translate(290.611894, 240.024246) rotate(-9.000000) translate(-290.611894, -240.024246) " x="189.611894" y="177.024246" width="202" height="126"></rect>
+                  <rect id="flag-7" fill="#D70000" transform="translate(312.000000, 79.000000) rotate(-9.000000) translate(-312.000000, -79.000000) " x="211" y="16" width="202" height="126"></rect>
+                  <rect id="flag-3" fill="#121212" transform="translate(413.000000, 165.000000) rotate(-9.000000) translate(-413.000000, -165.000000) " x="312" y="102" width="202" height="126"></rect>
+                  <rect id="flag-1" fill="#D70000" transform="translate(413.000000, 268.000000) rotate(-9.000000) translate(-413.000000, -268.000000) " x="312" y="205" width="202" height="126"></rect>
+                  <rect id="flag-2" fill="#121212" transform="translate(550.000000, 228.000000) rotate(-9.000000) translate(-550.000000, -228.000000) " x="449" y="165" width="202" height="126"></rect>
+                  <rect id="flag-4" fill="#D70000" transform="translate(550.000000, 142.000000) rotate(-9.000000) translate(-550.000000, -142.000000) " x="449" y="79" width="202" height="126"></rect>
+                  <rect id="flag-15" fill="#6C6C6C" transform="translate(836.611894, 94.024246) rotate(-9.000000) translate(-836.611894, -94.024246) " x="735.611894" y="31.0242464" width="202" height="126"></rect>
+                  <rect id="flag-10" fill="#484848" transform="translate(509.611894, 94.024246) rotate(-9.000000) translate(-509.611894, -94.024246) " x="408.611894" y="31.0242464" width="202" height="126"></rect>
+                  <rect id="flag-14" fill="#3D0000" transform="translate(712.000000, 114.000000) rotate(-9.000000) translate(-712.000000, -114.000000) " x="611" y="51" width="202" height="126"></rect>
+                  <rect id="flag-8" fill="#D70000" transform="translate(651.611894, 172.024246) rotate(-9.000000) translate(-651.611894, -172.024246) " x="550.611894" y="109.024246" width="202" height="126"></rect>
+                  <rect id="flag-11" fill="#D70000" transform="translate(651.000000, 240.000000) rotate(-9.000000) translate(-651.000000, -240.000000) " x="550" y="177" width="202" height="126"></rect>
+                  <rect id="flag-12" fill="#D70000" transform="translate(768.000000, 177.000000) rotate(-9.000000) translate(-768.000000, -177.000000) " x="667" y="114" width="202" height="126"></rect>
+                  <rect id="flag-16" fill="#333333" transform="translate(732.000000, 205.000000) rotate(-9.000000) translate(-732.000000, -205.000000) " x="631" y="142" width="202" height="126"></rect>
+                  <rect id="flag-17" fill="#D70000" transform="translate(802.611894, 139.024246) rotate(-9.000000) translate(-802.611894, -139.024246) " x="701.611894" y="76.0242464" width="202" height="126"></rect>
+              </g>
+          </g>
+      </g>
+  </svg>
+  
+  <div class="content">
+    <%= link_to Calagator.title, root_path, class: "title" %>
+    <div class="subtitle">activism and resistance events in portland</div>
+    <%= form_tag search_events_path, method: :get, class: 'header-search' do %>
+      <%= text_field_tag 'query', @query, tabindex: 1, placeholder: 'Search Events' %>
+    <% end -%>
+  </div>
+
+</header>
